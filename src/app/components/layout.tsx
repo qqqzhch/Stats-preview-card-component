@@ -11,5 +11,5 @@ export default function ComponentsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return <>={children}</>;
 }

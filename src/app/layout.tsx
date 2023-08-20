@@ -4,6 +4,7 @@ import * as React from 'react';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import { siteConfig } from '@/constant/config';
 
+// inter.style.fontFamily
 import StyledJsxRegistry from './registry';
 
 // !STARTERCONF Change these default meta
@@ -55,6 +56,7 @@ export default function RootLayout({
   return (
     <html>
       <body>
+        {/* <GlobalStyle></GlobalStyle> */}
         <StyledJsxRegistry>{children}</StyledJsxRegistry>
       </body>
     </html>

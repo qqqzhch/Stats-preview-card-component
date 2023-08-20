@@ -16,7 +16,7 @@ import styled from 'styled-components';
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
 const Main = styled.main`
-  background-color: red;
+  background-color: green;
 `;
 
 export default function HomePage() {
