@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import * as React from 'react';
 
+import '@/styles/index.css';
+
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import { siteConfig } from '@/constant/config';
 
@@ -55,7 +57,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>
+      <body style={{ margin: '0px' }}>
         {/* <GlobalStyle></GlobalStyle> */}
         <StyledJsxRegistry>{children}</StyledJsxRegistry>
       </body>

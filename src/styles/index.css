@@ -1,0 +1,14 @@
+:root {
+  /* #region  /**=========== Primary Color =========== */
+  /* !STARTERCONF Customize these variable, copy and paste from /styles/colors.css for list of colors */
+
+  --PrimaryVerydarkblue: hsl(233, 47%, 7%);
+  --PrimaryDarkdesaturatedblue: hsl(244, 38%, 16%);
+  --PrimarySoftviolet: hsl(277, 64%, 61%);
+  --NeutralWhite: hsl(0, 0%, 100%);
+  --NeutralWhiteSlightlyMain: hsla(0, 0%, 100%, 0.75);
+  --NeutralWhiteSlightlyMain2: hsla(0, 0%, 100%, 0.6);
+  --color-primary-50: rgb(var(--PrimaryVerydarkblue)); /* #f0f9ff */
+
+  /* #endregion  /**======== Primary Color =========== */
+}
