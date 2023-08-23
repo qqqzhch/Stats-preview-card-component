@@ -4,6 +4,9 @@ import Head from 'next/head';
 import * as React from 'react';
 import styled from 'styled-components';
 
+import { inter, LexendDeca } from '@/constant/font';
+import { devices } from '@/constant/theme';
+
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -21,50 +24,114 @@ const Main = styled.main`
   display: flex;
 `;
 const Card = styled.section`
-  height: 450px;
-  width: 1110px;
   margin: auto;
   background-color: var(--PrimaryDarkdesaturatedblue);
   display: flex;
   justify-content: space-between;
+  border-radius: 1rem;
+  @media screen and ${devices.sm} {
+    flex-direction: column-reverse;
+    height: auto;
+    /* padding: 2rem; */
+    /* padding-top: 6rem; */
+    width: 100%;
+    margin: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  @media screen and ${devices.md} {
+    flex-direction: row;
+    height: 450px;
+    width: 1110px;
+    padding: 0px;
+  }
 `;
 const Left = styled.div`
   box-sizing: border-box;
-  width: 50%;
+
   color: var(--NeutralWhite);
-  padding: 50px 70px 50px 70px;
+
   display: flex;
   flex-direction: column;
+  @media screen and ${devices.sm} {
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+  }
+  @media screen and ${devices.md} {
+    width: 50%;
+    padding: 50px 70px 50px 70px;
+  }
 `;
 const Right = styled.div`
-  width: 50%;
   background-image: url('/images/image-header-desktop.jpg');
   background-blend-mode: multiply;
   background-color: var(--PrimarySoftviolet);
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and ${devices.sm} {
+    width: 100%;
+    height: 14rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+  @media screen and ${devices.md} {
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 1rem;
+  }
 `;
 const H1 = styled.h1`
   font-size: 34px;
   margin-bottom: 10px;
 `;
 const P = styled.p`
-  color: var(--NeutralWhiteSlightlyMain);
+  color: var(--NeutralWhiteSlightlyMain2);
   line-height: 28px;
   font-size: 16px;
 `;
-const Div = styled.div``;
+const Div = styled.div`
+  display: flex;
+  @media screen and ${devices.sm} {
+    flex-direction: column;
+    justify-items: center;
+  }
+  @media screen and ${devices.md} {
+    flex-direction: row;
+  }
+`;
 const Span = styled.span`
   color: var(--PrimarySoftviolet);
 `;
+const NumPanel = styled.div`
+  display: flex;
+  flex-direction: column;
 
+  @media screen and ${devices.sm} {
+    width: 100%;
+  }
+  @media screen and ${devices.md} {
+    width: 30%;
+  }
+`;
+const H3Warp = styled.h3`
+  font-size: 25px;
+  margin-bottom: 0px;
+`;
+const Pwarp = styled.p`
+  color: var(--NeutralWhiteSlightlyMain2);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+`;
 export default function HomePage() {
   return (
     <>
       <Head>
         <title>Hi</title>
       </Head>
-      <Main>
+      <Main className={inter.className}>
         <Card>
           <Left>
             <H1>
@@ -74,7 +141,20 @@ export default function HomePage() {
               Discover the benefits of data analytics and make better decisions
               regarding revenue, customer experience, and overall efficiency.
             </P>
-            <Div>10k+ companies 314 templates 12m+ queries</Div>
+            <Div>
+              <NumPanel>
+                <H3Warp>10k+</H3Warp>
+                <Pwarp className={LexendDeca.className}>companies</Pwarp>
+              </NumPanel>
+              <NumPanel>
+                <H3Warp>314</H3Warp>
+                <Pwarp className={LexendDeca.className}> templates</Pwarp>
+              </NumPanel>
+              <NumPanel>
+                <H3Warp>12m+</H3Warp>
+                <Pwarp className={LexendDeca.className}>queries</Pwarp>
+              </NumPanel>
+            </Div>
           </Left>
           <Right></Right>
         </Card>

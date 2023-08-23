@@ -57,7 +57,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body style={{ margin: '0px' }}>
+      <body style={{ margin: '0px', fontSize: '16px' }}>
         {/* <GlobalStyle></GlobalStyle> */}
         <StyledJsxRegistry>{children}</StyledJsxRegistry>
       </body>

@@ -4,7 +4,7 @@ export default themeConfig;
 
 const breakpoints = {
   xs: '320px',
-  sm: '640px',
+  sm: '320px',
   md: '768px',
   lg: '1024px',
   xl: '1280px',
@@ -20,13 +20,13 @@ export const devices = {
   '2xl': `(min-width: ${breakpoints['2xl']})`,
 };
 
-export const ColorPrimarVerydarkblue = 'hsl(233, 47%, 7%)';
-export const ColorPrimarDarkdesaturatedblue = 'hsl(244, 38%, 16%)';
-export const ColorPrimarSoftviolet = 'hsl(277, 64%, 61%)';
+// export const ColorPrimarVerydarkblue = 'hsl(233, 47%, 7%)';
+// export const ColorPrimarDarkdesaturatedblue = 'hsl(244, 38%, 16%)';
+// export const ColorPrimarSoftviolet = 'hsl(277, 64%, 61%)';
 
-export const ColorNeutralWhite = 'hsl(0, 0%, 100%)';
-export const ColorNeutralSlightlytransparentwhite = 'hsla(0, 0%, 100%, 0.75)';
-export const ColorNeutralSlightlytransparentwhite2 = 'hsla(0, 0%, 100%, 0.6)';
+// export const ColorNeutralWhite = 'hsl(0, 0%, 100%)';
+// export const ColorNeutralSlightlytransparentwhite = 'hsla(0, 0%, 100%, 0.75)';
+// export const ColorNeutralSlightlytransparentwhite2 = 'hsla(0, 0%, 100%, 0.6)';
 /*
 ## Colors
 
