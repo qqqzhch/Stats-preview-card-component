@@ -24,7 +24,6 @@ const Main = styled.main`
   display: flex;
 `;
 const Card = styled.section`
-  margin: auto;
   background-color: var(--PrimaryDarkdesaturatedblue);
   display: flex;
   justify-content: space-between;
@@ -44,6 +43,7 @@ const Card = styled.section`
     height: 450px;
     width: 1110px;
     padding: 0px;
+    margin: auto;
   }
 `;
 const Left = styled.div`
