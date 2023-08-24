@@ -113,7 +113,7 @@ const Div = styled.div`
   @media screen and ${devices.md} {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 `;
 const Span = styled.span`
@@ -139,7 +139,7 @@ const H3Warp = styled.div`
 const Pwarp = styled.p`
   color: var(--NeutralWhiteSlightlyMain2);
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1px;
   vertical-align: top;
 `;
