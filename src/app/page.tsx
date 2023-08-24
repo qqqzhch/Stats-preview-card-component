@@ -83,13 +83,26 @@ const Right = styled.div`
   }
 `;
 const H1 = styled.h1`
-  font-size: 34px;
+  font-size: 36px;
   margin-bottom: 10px;
+  @media screen and ${devices.sm} {
+    text-align: center;
+  }
+  @media screen and ${devices.md} {
+    text-align: left;
+  }
 `;
 const P = styled.p`
   color: var(--NeutralWhiteSlightlyMain2);
   line-height: 28px;
   font-size: 16px;
+
+  @media screen and ${devices.sm} {
+    text-align: center;
+  }
+  @media screen and ${devices.md} {
+    text-align: left;
+  }
 `;
 const Div = styled.div`
   display: flex;
@@ -99,6 +112,8 @@ const Div = styled.div`
   }
   @media screen and ${devices.md} {
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
   }
 `;
 const Span = styled.span`
@@ -113,6 +128,7 @@ const NumPanel = styled.div`
   }
   @media screen and ${devices.md} {
     width: 30%;
+    text-align: left;
   }
 `;
 const H3Warp = styled.h3`
@@ -124,6 +140,7 @@ const Pwarp = styled.p`
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px;
+  vertical-align: top;
 `;
 export default function HomePage() {
   return (
