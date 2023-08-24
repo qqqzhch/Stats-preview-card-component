@@ -131,9 +131,10 @@ const NumPanel = styled.div`
     text-align: left;
   }
 `;
-const H3Warp = styled.h3`
+const H3Warp = styled.div`
   font-size: 25px;
   margin-bottom: 0px;
+  font-weight: 600;
 `;
 const Pwarp = styled.p`
   color: var(--NeutralWhiteSlightlyMain2);

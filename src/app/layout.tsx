@@ -26,15 +26,15 @@ export const metadata: Metadata = {
     apple: '/favicon/apple-touch-icon.png',
   },
   manifest: `/favicon/site.webmanifest`,
-  openGraph: {
-    url: siteConfig.url,
-    title: siteConfig.title,
-    description: siteConfig.description,
-    siteName: siteConfig.title,
-    images: [`${siteConfig.url}/images/og.jpg`],
-    type: 'website',
-    locale: 'en_US',
-  },
+  // openGraph: {
+  //   url: siteConfig.url,
+  //   title: siteConfig.title,
+  //   description: siteConfig.description,
+  //   siteName: siteConfig.title,
+  //   images: [`${siteConfig.url}/images/og.jpg`],
+  //   type: 'website',
+  //   locale: 'en_US',
+  // },
   twitter: {
     card: 'summary_large_image',
     title: siteConfig.title,
@@ -56,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html lang='en'>
       <body style={{ margin: '0px', fontSize: '16px' }}>
         {/* <GlobalStyle></GlobalStyle> */}
         <StyledJsxRegistry>{children}</StyledJsxRegistry>
