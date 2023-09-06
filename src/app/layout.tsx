@@ -42,6 +42,10 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/og.jpg`],
     // creator: '@th_clarence',
   },
+  other: {
+    'next-size-adjust': 'font',
+  },
+
   // authors: [
   //   {
   //     name: 'Theodorus Clarence',

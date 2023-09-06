@@ -61,7 +61,7 @@ const page = () => {
       width: 40%;
     }
   `;
-  const SubTitle = styled.div`
+  const SubTitle = styled.h1`
     font-size: 30px;
     font-weight: 700;
   `;
