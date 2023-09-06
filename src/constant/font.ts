@@ -1,4 +1,4 @@
-import { Inter, Lexend_Deca } from 'next/font/google';
+import { Inter, Lexend_Deca, Poppins } from 'next/font/google';
 
 export const inter = Inter({
   subsets: ['latin'],
@@ -17,3 +17,9 @@ export const LexendDeca = Lexend_Deca({
   font-style: italic;
 }
 */
+
+export const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--Poppins',
+  weight: ['200', '400', '600'],
+});

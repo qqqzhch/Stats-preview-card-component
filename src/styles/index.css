@@ -11,4 +11,13 @@
   --color-primary-50: rgb(var(--PrimaryVerydarkblue)); /* #f0f9ff */
 
   /* #endregion  /**======== Primary Color =========== */
+
+  --PrimaryRed: hsl(0, 78%, 62%);
+  --PrimaryCyan: hsl(180, 62%, 55%);
+  --PrimaryOrange: hsl(34, 97%, 64%);
+  --PrimaryBlue: hsl(212, 86%, 64%);
+  --NeutralVeryDarkBlue: hsl(234, 12%, 34%);
+  --NeutralGrayishBlue: hsl(229, 6%, 66%);
+  --NeutralVeryLightGray: hsl(0, 0%, 98%);
 }
+@import './normalize.css';
