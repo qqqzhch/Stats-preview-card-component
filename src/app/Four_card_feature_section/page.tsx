@@ -46,9 +46,9 @@ const page = () => {
     }
   `;
   const Title = styled.div`
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 100;
-    margin-top: 100px;
+    margin-top: 90px;
     font-family: ${poppins.style.fontFamily};
   `;
   const Brif = styled.div`
@@ -58,12 +58,20 @@ const page = () => {
       width: 80%;
     }
     @media screen and ${devices.md} {
-      width: 40%;
+      width: 45%;
+    }
+    @media screen and ${devices.xl} {
+      width: 35%;
+    }
+    @media screen and ${devices['2xl']} {
+      width: 25%;
     }
   `;
   const SubTitle = styled.h1`
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
+    margin: 0 0;
+    margin-bottom: 10px;
   `;
   const Card = styled.div`
     border-top: 3px;
@@ -73,7 +81,7 @@ const page = () => {
     box-shadow: 7px 6px 18px #dbd8d8;
     text-align: left;
     padding: 20px;
-    height: 235px;
+    height: 220px;
     box-sizing: border-box;
     position: relative;
     p {
